@@ -29,9 +29,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@apps/todoappv3@workspace:apps/ToDoAppV3":
+"@apps/todoapp@workspace:^, @apps/todoapp@workspace:apps/todoapp":
   version: 0.0.0-use.local
-  resolution: "@apps/todoappv3@workspace:apps/ToDoAppV3"
+  resolution: "@apps/todoapp@workspace:apps/todoapp"
   dependencies:
     "@types/react": "npm:^18.2.65"
     "@types/react-dom": "npm:^18.2.21"
@@ -3421,6 +3421,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "todoappv4@workspace:."
   dependencies:
+    "@apps/todoapp": "workspace:^"
     "@types/react": "npm:^18.2.65"
     "@types/react-dom": "npm:^18.2.21"
     "@typescript-eslint/eslint-plugin": "npm:^7.0.2"
