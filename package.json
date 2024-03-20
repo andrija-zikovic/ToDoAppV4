@@ -9,7 +9,7 @@
         "shared/*"
     ],
     "scripts": {
-        "start": "yarn workspace @apps/todoappv3 dev"
+        "start": "yarn workspace @apps/todoappv dev"
     },
     "devDependencies": {
         "@types/react": "^18.2.65",

@@ -23,3 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 .yarn/*
+.vite/*
+
+apps/ToDoAppV3/*/node_modules/
+
