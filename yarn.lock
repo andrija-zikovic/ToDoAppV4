@@ -29,11 +29,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@apps/todoapp@npm:0.0.0, @apps/todoapp@workspace:^, @apps/todoapp@workspace:apps/todoapp":
+"@apps/todoapp@workspace:*, @apps/todoapp@workspace:apps/todoapp":
   version: 0.0.0-use.local
   resolution: "@apps/todoapp@workspace:apps/todoapp"
   dependencies:
-    "@shared/ui": "npm:0.0.0"
+    "@shared/ui": "workspace:*"
     "@types/react": "npm:^18.2.65"
     "@types/react-dom": "npm:^18.2.21"
     "@typescript-eslint/eslint-plugin": "npm:^7.0.2"
@@ -761,11 +761,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@shared/ui@npm:0.0.0, @shared/ui@workspace:^, @shared/ui@workspace:shared/ui":
+"@shared/ui@workspace:*, @shared/ui@workspace:shared/ui":
   version: 0.0.0-use.local
   resolution: "@shared/ui@workspace:shared/ui"
   dependencies:
-    "@apps/todoapp": "npm:0.0.0"
+    "@apps/todoapp": "workspace:*"
     "@types/react": "npm:^18.2.65"
     "@types/react-dom": "npm:^18.2.21"
     "@typescript-eslint/eslint-plugin": "npm:^7.0.2"
@@ -881,6 +881,15 @@ __metadata:
   version: 7.5.8
   resolution: "@types/semver@npm:7.5.8"
   checksum: 10c0/8663ff927234d1c5fcc04b33062cb2b9fcfbe0f5f351ed26c4d1e1581657deebd506b41ff7fdf89e787e3d33ce05854bc01686379b89e9c49b564c4cfa988efa
+  languageName: node
+  linkType: hard
+
+"@types/tailwindcss@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@types/tailwindcss@npm:3.1.0"
+  dependencies:
+    tailwindcss: "npm:*"
+  checksum: 10c0/7a258e7ce46060fd598669605dabbeef16cf5d13f36bcb1764255837e7b889a4fa6b39a9ffd1c70eed55e0892c5dac079574371cbc343515a2850a088717ab68
   languageName: node
   linkType: hard
 
@@ -3357,7 +3366,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.4.1":
+"tailwindcss@npm:*, tailwindcss@npm:^3.4.1":
   version: 3.4.1
   resolution: "tailwindcss@npm:3.4.1"
   dependencies:
@@ -3449,10 +3458,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "todoappv4@workspace:."
   dependencies:
-    "@apps/todoapp": "workspace:^"
-    "@shared/ui": "workspace:^"
     "@types/react": "npm:^18.2.65"
     "@types/react-dom": "npm:^18.2.21"
+    "@types/tailwindcss": "npm:^3.1.0"
     "@typescript-eslint/eslint-plugin": "npm:^7.0.2"
     "@typescript-eslint/parser": "npm:^7.0.2"
     "@vitejs/plugin-react": "npm:^4.2.1"

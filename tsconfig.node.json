@@ -1,18 +1,10 @@
 {
-    "extends": "./tsconfig.json",
-    "compilerOptions": {
-      "outDir": "dist",
+  "compilerOptions": {
       "composite": true,
-      "noEmit": true,
-      "allowImportingTsExtensions": true,
-      "rootDir": "./",
-      "baseUrl": ".",
-      "paths": {
-        "*": ["node_modules/*"]
-      }
-    },
-    
-    "include": ["./**/*.ts", "./**/*.tsx"],
-    "exclude": ["node_modules", "dist"]
+      "skipLibCheck": true,
+      "module": "ESNext",
+      "moduleResolution": "bundler",
+      "allowSyntheticDefaultImports": true,
+      "strict": true
   }
-  
+}
