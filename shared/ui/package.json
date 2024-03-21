@@ -7,7 +7,6 @@
         "check:fix": "eslint . --ext .ts --fix | npx prettier . --write"
     },
     "dependencies": {
-        "@apps/todoapp": "workspace:*",
         "dayjs": "^1.11.10",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",

@@ -5,15 +5,6 @@ type TTodo = {
     created_at: number
 }
 
-type TInfoMessage = {
-    message: string
-    type: 'default' | 'error' | 'success'
-}
-
-type TCreateFormData = {
-    description: string
-}
-
 type TUpdateFormData = {
     id: string
     description?: string
@@ -24,4 +15,4 @@ type IForm = {
     event: React.FormEvent<HTMLFormElement>
 }
 
-export type { TTodo, TInfoMessage, TCreateFormData, TUpdateFormData, IForm }
+export type { TTodo, TUpdateFormData, IForm }

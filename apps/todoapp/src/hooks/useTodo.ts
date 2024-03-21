@@ -1,10 +1,10 @@
 import { useContext } from 'react'
 import { useNavigate } from 'react-router'
 import { localStorageWrapper } from '../storage/storage'
-import { Stage } from '@shared/ui/src/enums/stage'
+import { Stage } from '@shared/ui'
 import { TTodo, TUpdateFormData } from '../types/types'
-import MessageContext from '@shared/ui/src/context/messageContext'
-import TodoContext from '@shared/ui/src/context/todoContext'
+import { MessageContext } from '@shared/ui'
+import { TodoContext } from '@shared/ui'
 import dayjs from 'dayjs'
 
 export const useTodo = () => {
