@@ -25,5 +25,4 @@ dist-ssr
 .vite/*
 /.yarn
 
-apps/ToDoAppV3/*/node_modules/
 
