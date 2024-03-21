@@ -2,7 +2,13 @@ import { useContext } from 'react'
 import TodoContext from '../context/todoContext'
 import { Stage, TSortStage } from '../enums/stage'
 import { localStorageWrapper } from '../storage/storage'
-import { TTodo } from '../types/types'
+
+type TTodo = {
+    id: string
+    description: string
+    stage: string
+    created_at: number
+}
 
 export const useTodoList = () => {
     const { toDoList, setToDoList } = useContext(TodoContext)!

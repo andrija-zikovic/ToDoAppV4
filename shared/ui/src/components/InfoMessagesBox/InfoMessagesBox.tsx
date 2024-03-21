@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { MessageContext } from '../../../../apps/Newtodo'
+import { MessageContext } from '../../context/messageContext'
 import InfoMessage from './InfoMessage'
 
 export const InfoMessagesBox = () => {

@@ -29,9 +29,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@apps/todoapp@workspace:*, @apps/todoapp@workspace:apps/newToDo":
+"@apps/todoapp@workspace:*, @apps/todoapp@workspace:apps/todoapp":
   version: 0.0.0-use.local
-  resolution: "@apps/todoapp@workspace:apps/newToDo"
+  resolution: "@apps/todoapp@workspace:apps/todoapp"
   dependencies:
     "@shared/ui": "workspace:*"
     "@types/react": "npm:^18.2.65"
@@ -3470,8 +3470,6 @@ __metadata:
     eslint-plugin-react-refresh: "npm:^0.4.5"
     postcss: "npm:^8.4.36"
     prettier: "npm:3.2.5"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
     tailwindcss: "npm:^3.4.1"
     typescript: "npm:^5.2.2"
     vite: "npm:^5.1.4"

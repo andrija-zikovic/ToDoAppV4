@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router'
 import { useTodo } from '../hooks/useTodo'
 import { Form } from '../enums/form'
 import { IForm } from '../types/types'
-import { TodoForm } from '@shared/ui'
+import { TodoForm } from '@shared/ui/src/components/Forms/TodoForm'
 import { descriptionInputValidation } from '../validation/descriptionInputValidation'
 
 const CreateScreen = () => {

@@ -1,6 +1,6 @@
 import { MainRouter } from './router/MainRouter'
-import { TodoContextProvider } from './context/todoContext'
-import { MessageContextProvider } from './context/messageContext'
+import { TodoContextProvider } from '@shared/ui/src/context/todoContext'
+import { MessageContextProvider } from '@shared/ui/src/context/messageContext'
 
 function App() {
     return (

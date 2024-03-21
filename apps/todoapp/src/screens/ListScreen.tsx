@@ -1,7 +1,7 @@
-import { SortByStageBox } from '@shared/ui'
-import { SearchBox } from '@shared/ui'
-import { SortByDateButton } from '@shared/ui'
-import { ToDoList } from '@shared/ui'
+import { SortByStageBox } from '@shared/ui/src/components/SortByStageBox/SortByStageBox'
+import { SearchBox } from '@shared/ui/src/components/SearchBox/SearchBox'
+import { SortByDateButton } from '@shared/ui/src/components/Buttons/SortByDateButton'
+import { ToDoList } from '@shared/ui/src/components/ToDoList/ToDoList'
 
 export default function ListScreen() {
     return (

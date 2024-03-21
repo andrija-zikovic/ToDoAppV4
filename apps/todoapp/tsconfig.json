@@ -1,14 +1,4 @@
 {
-    "extends": "../../tsconfig.json",
-    "compilerOptions": {
-      "outDir": "dist",
-      "rootDir": "src",
-      "baseUrl": ".",
-      "paths": {
-        "*": ["node_modules/*"]
-      }
-    },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "dist"]
-  }
-  
+  "include": ["src", "../../shared/ui/src/context/todoContext.tsx", "../../shared/ui/src/context/messageContext.tsx", "../../shared/ui/src/enums/stage.ts"],
+  "extends": "../../tsconfig.json"
+}

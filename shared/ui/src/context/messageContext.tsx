@@ -1,5 +1,9 @@
 import { createContext, useState, useEffect } from 'react'
-import { TInfoMessage } from '../types/types'
+
+type TInfoMessage = {
+    message: string
+    type: 'default' | 'error' | 'success'
+}
 
 type IProps = {
     children: React.ReactNode

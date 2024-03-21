@@ -1,6 +1,12 @@
 import { createContext, useState } from 'react'
 import { localStorageWrapper } from '../storage/storage'
-import { TTodo } from '../types/types'
+
+type TTodo = {
+    id: string
+    description: string
+    stage: string
+    created_at: number
+}
 
 type IProps = {
     children: React.ReactNode

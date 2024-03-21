@@ -1,6 +1,6 @@
 import SortByStageRadioInput from '../Inputs/SortByStageRadioInput'
-import { Stage } from '../../../../apps/Newtodo'
-import { useTodoList } from '../../../../apps/Newtodo'
+import { Stage } from '../../enums/stage'
+import { useTodoList } from '../../hooks/useTodoList'
 
 export const SortByStageBox = () => {
     const sort = useTodoList()
