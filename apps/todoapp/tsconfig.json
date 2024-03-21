@@ -1,4 +1,9 @@
 {
-  "include": ["src", "../../shared/ui/src/context/todoContext.tsx", "../../shared/ui/src/context/messageContext.tsx", "../../shared/ui/src/enums/stage.ts"],
-  "extends": "../../tsconfig.json"
+    "include": [
+        "src",
+        "../../shared/ui/src/context/todoContext.tsx",
+        "../../shared/ui/src/context/messageContext.tsx",
+        "../../shared/ui/src/enums/stage.ts"
+    ],
+    "extends": "../../tsconfig.json"
 }

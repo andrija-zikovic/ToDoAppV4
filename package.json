@@ -9,7 +9,9 @@
         "shared/*"
     ],
     "scripts": {
-        "start": "yarn workspace @apps/todoapp dev"
+        "start": "yarn workspace @apps/todoapp dev",
+        "check": "yarn workspace @apps/todoapp check",
+        "check:fix": "yarn workspace @apps/todoapp check:fix"
     },
     "devDependencies": {
         "@types/react": "^18.2.65",
@@ -19,11 +21,12 @@
         "@typescript-eslint/parser": "^7.0.2",
         "@vitejs/plugin-react": "^4.2.1",
         "autoprefixer": "^10.4.18",
-        "eslint": "^8.56.0",
+        "eslint": "^8.57.0",
+        "eslint-plugin-react": "^7.34.1",
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-react-refresh": "^0.4.5",
         "postcss": "^8.4.36",
-        "prettier": "3.2.5",
+        "prettier": "^3.2.5",
         "tailwindcss": "^3.4.1",
         "typescript": "^5.2.2",
         "vite": "^5.1.4"
