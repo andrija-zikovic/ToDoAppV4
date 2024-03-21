@@ -1,15 +1,11 @@
-# ToDoAppV3
+# ToDoAppV4
 
-Open repository ---> cd ToDoAppV#
+clone repo ----> git clone https://github.com/andrija-zikovic/ToDoAppV4
 
-Install packages ----> npm install
+open repo ----> cd ToDoAppV4
 
-Start Vita Server ----> npm run dev
+run yarn ----> yarn
 
-Go to ---> http://localhost:5173/
+run live server ----> yarn start
 
-option :
-
-Check for bugs: ---> npm run check
-
-Check and fix bugs: ----> npm run check:fix
+got to provided link
