@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { TTodo } from '../../types/types'
+import { TTodo } from '@shared/utils'
 import TextInput from '../Inputs/TextInput'
 import SubmitButton from '../Buttons/SubmitButton'
 import SelectInput from '../Inputs/SelectInput'

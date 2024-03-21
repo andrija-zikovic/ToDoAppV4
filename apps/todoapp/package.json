@@ -12,7 +12,9 @@
         "check:fix": "eslint . --ext .ts --fix | npx prettier . --write"
     },
     "dependencies": {
-        "@shared/ui": "workspace/*",
+        "@shared/context": "workspace:^",
+        "@shared/ui": "workspace:^",
+        "@shared/utils": "workspace:^",
         "dayjs": "^1.11.10",
         "localforage": "^1.10.0",
         "match-sorter": "^6.3.4",

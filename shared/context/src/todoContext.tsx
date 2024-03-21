@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react'
-import { TTodo } from '../types/types'
-import { localStorageWrapper } from '../storage/storage'
+import { TTodo } from '@shared/ui/src/types/types'
+import { localStorageWrapper } from '@shared/ui/src/storage/storage'
 
 type IProps = {
     children: React.ReactNode

@@ -1,7 +1,9 @@
-import { SortByStageBox } from '@shared/ui'
-import { SearchBox } from '@shared/ui'
-import { SortByDateButton } from '@shared/ui'
-import { ToDoList } from '@shared/ui'
+import {
+    SortByStageBox,
+    SearchBox,
+    SortByDateButton,
+    ToDoList,
+} from '@shared/ui'
 
 export default function ListScreen() {
     return (

@@ -3,8 +3,7 @@ import { useNavigate, useParams } from 'react-router'
 import { useSearchParams } from 'react-router-dom'
 import { descriptionInputValidation } from '../validation/descriptionInputValidation'
 import { TodoForm } from '@shared/ui'
-import { IForm } from '../types/types'
-import { Form } from '../enums/form'
+import { IForm, Form } from '@shared/utils'
 import { useTodo } from '../hooks/useTodo'
 
 const EditScreen = () => {

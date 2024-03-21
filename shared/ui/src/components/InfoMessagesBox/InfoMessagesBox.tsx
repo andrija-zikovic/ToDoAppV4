@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { MessageContext } from '../../context/messageContext'
+import { MessageContext } from '@shared/context'
 import InfoMessage from './InfoMessage'
 
 export const InfoMessagesBox = () => {

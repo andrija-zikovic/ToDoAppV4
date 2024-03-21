@@ -29,11 +29,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@apps/todoapp@workspace:*, @apps/todoapp@workspace:apps/todoapp":
+"@apps/todoapp@workspace:apps/todoapp":
   version: 0.0.0-use.local
   resolution: "@apps/todoapp@workspace:apps/todoapp"
   dependencies:
-    "@shared/ui": "workspace:*"
+    "@shared/context": "workspace:^"
+    "@shared/ui": "workspace:^"
+    "@shared/utils": "workspace:^"
     "@types/react": "npm:^18.2.65"
     "@types/react-dom": "npm:^18.2.21"
     "@typescript-eslint/eslint-plugin": "npm:^7.0.2"
@@ -761,11 +763,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@shared/ui@workspace:*, @shared/ui@workspace:shared/ui":
+"@shared/context@workspace:^, @shared/context@workspace:shared/context":
+  version: 0.0.0-use.local
+  resolution: "@shared/context@workspace:shared/context"
+  dependencies:
+    react: "npm:^18.2.0"
+  languageName: unknown
+  linkType: soft
+
+"@shared/ui@workspace:^, @shared/ui@workspace:shared/ui":
   version: 0.0.0-use.local
   resolution: "@shared/ui@workspace:shared/ui"
   dependencies:
-    "@apps/todoapp": "workspace:*"
+    "@shared/context": "workspace:^"
+    "@shared/utils": "workspace:^"
     "@types/react": "npm:^18.2.65"
     "@types/react-dom": "npm:^18.2.21"
     "@typescript-eslint/eslint-plugin": "npm:^7.0.2"
@@ -785,6 +796,14 @@ __metadata:
     tailwindcss: "npm:^3.4.1"
     typescript: "npm:^5.2.2"
     vite: "npm:^5.1.4"
+  languageName: unknown
+  linkType: soft
+
+"@shared/utils@workspace:^, @shared/utils@workspace:shared/utils":
+  version: 0.0.0-use.local
+  resolution: "@shared/utils@workspace:shared/utils"
+  dependencies:
+    react: "npm:^18.2.0"
   languageName: unknown
   linkType: soft
 

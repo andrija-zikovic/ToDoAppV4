@@ -1,0 +1,8 @@
+{
+    "name": "@shared/context",
+    "type": "module",
+    "main": "./src",
+    "dependencies": {
+        "react": "^18.2.0"
+    }
+}

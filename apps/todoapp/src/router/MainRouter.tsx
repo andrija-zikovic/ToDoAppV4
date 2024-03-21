@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
 import { HeaderComponent } from '@shared/ui'
+import { InfoMessagesBox } from '@shared/ui'
 import ListScreen from '../screens/ListScreen'
 import CreateScreen from '../screens/CreateScreen'
 import EditScreen from '../screens/EditScreen'
-import { InfoMessagesBox } from '@shared/ui'
 
 export const MainRouter = () => {
     return (
