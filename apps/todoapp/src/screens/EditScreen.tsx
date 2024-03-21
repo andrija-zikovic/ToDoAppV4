@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router'
 import { useSearchParams } from 'react-router-dom'
-import { descriptionInputValidation } from '../validation/descriptionInputValidation'
+import { descriptionInputValidation } from '@shared/utils/src/validation/descriptionInputValidation'
 import { TodoForm } from '@shared/ui'
 import { IForm, Form } from '@shared/utils'
 import { useTodo } from '../hooks/useTodo'

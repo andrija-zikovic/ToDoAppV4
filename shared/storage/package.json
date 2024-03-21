@@ -1,0 +1,5 @@
+{
+    "name": "@shared/storage",
+    "type": "module",
+    "main": "./src"
+}

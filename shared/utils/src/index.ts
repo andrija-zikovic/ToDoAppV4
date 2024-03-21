@@ -9,3 +9,4 @@ export {
 
 export { TTodo, TUpdateFormData, IForm } from './types/types'
 export { Form } from './enums/form'
+export { descriptionInputValidation } from './validation/descriptionInputValidation'

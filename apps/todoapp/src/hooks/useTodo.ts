@@ -1,8 +1,7 @@
 import { useContext } from 'react'
 import { useNavigate } from 'react-router'
-import { localStorageWrapper } from '../storage/storage'
-import { Stage } from '@shared/ui'
-import { TTodo, TUpdateFormData } from '@shared/utils'
+import { localStorageWrapper } from '@shared/storage'
+import { TTodo, TUpdateFormData, Stage } from '@shared/utils'
 import { MessageContext, TodoContext } from '@shared/context'
 import dayjs from 'dayjs'
 

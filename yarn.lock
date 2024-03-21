@@ -771,6 +771,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@shared/storage@workspace:shared/storage":
+  version: 0.0.0-use.local
+  resolution: "@shared/storage@workspace:shared/storage"
+  languageName: unknown
+  linkType: soft
+
 "@shared/ui@workspace:^, @shared/ui@workspace:shared/ui":
   version: 0.0.0-use.local
   resolution: "@shared/ui@workspace:shared/ui"

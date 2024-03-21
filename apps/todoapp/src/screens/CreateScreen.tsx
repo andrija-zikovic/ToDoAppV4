@@ -2,9 +2,8 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router'
 import { useTodo } from '../hooks/useTodo'
 import { Form } from '@shared/utils'
-import { IForm } from '@shared/utils'
+import { IForm, descriptionInputValidation } from '@shared/utils'
 import { TodoForm } from '@shared/ui'
-import { descriptionInputValidation } from '../validation/descriptionInputValidation'
 
 const CreateScreen = () => {
     const navigate = useNavigate()

@@ -1,8 +1,7 @@
 import { useContext } from 'react'
-import TodoContext from '../../../context/src/todoContext'
-import { Stage, TSortStage } from '../../../utils/src/enums/stage'
-import { TTodo } from '../../../utils/src/types/types'
-import { localStorageWrapper } from '../storage/storage'
+import { TodoContext } from '@shared/context'
+import { Stage, TSortStage, TTodo } from '@shared/utils'
+import { localStorageWrapper } from '@shared/storage'
 
 export const useTodoList = () => {
     const {
