@@ -21,7 +21,7 @@ export const ToDoList = () => {
                     </Link>
                 </div>
             ) : (
-                toDoList.map((item) => <ToDoCard item={item} />)
+                toDoList.map((item) => <ToDoCard key={item.id} item={item} />)
             )}
         </div>
     )

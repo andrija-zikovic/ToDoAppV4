@@ -30,6 +30,7 @@ export const HeaderComponent = () => {
                 <div className="hidden md:flex flex-row justify-end items-center h-full">
                     {dropDownPath.map((item) => (
                         <Link
+                            key={item.name}
                             to={item.path}
                             className="text-2xl text-orange-200 hover:text-slate-400 pr-3"
                         >

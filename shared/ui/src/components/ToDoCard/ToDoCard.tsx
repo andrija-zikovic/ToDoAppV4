@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import dayjs from 'dayjs'
 
-type ToDoCardProps = {
+type IProps = {
     item: {
         id: string
         description: string
@@ -10,7 +10,7 @@ type ToDoCardProps = {
     }
 }
 
-const ToDoCard = ({ item }: ToDoCardProps) => {
+const ToDoCard = ({ item }: IProps) => {
     const createdAtTime = dayjs(item.created_at).format('HH:mm')
     const createdAtDate = dayjs(item.created_at).format('DD. MM. YYYY.')
 

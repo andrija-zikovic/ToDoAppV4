@@ -1,9 +1,10 @@
+import { useState } from 'react'
+import { TTodo } from '../../types/types'
 import TextInput from '../Inputs/TextInput'
 import SubmitButton from '../Buttons/SubmitButton'
 import SelectInput from '../Inputs/SelectInput'
 import DeleteConfirmationWindow from '../DeleteConfirmationWindow/DeleteConfirmationWindow'
 import Overlay from '../Overlay/Overlay'
-import { useState } from 'react'
 
 type IForm = {
     event: React.FormEvent<HTMLFormElement>
@@ -13,13 +14,6 @@ export const Form = {
     CREATE: 'Create',
     UPDATE: 'Update',
 } as const
-
-type TTodo = {
-    id: string
-    description: string
-    stage: string
-    created_at: number
-}
 
 type TForm = (typeof Form)[keyof typeof Form]
 

@@ -1,5 +1,5 @@
-import { content } from "../../tailwind.config.js";
+import { content } from '../../tailwind.config.js'
 
 export default {
-    content: content
+    content: content,
 }

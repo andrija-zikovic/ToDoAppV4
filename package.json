@@ -10,8 +10,8 @@
     ],
     "scripts": {
         "start": "yarn workspace @apps/todoapp dev",
-        "check": "yarn workspace @apps/todoapp check",
-        "check:fix": "yarn workspace @apps/todoapp check:fix"
+        "check": "yarn workspace @apps/todoapp check && yarn workspace @shared/ui check",
+        "check:fix": "yarn workspace @apps/todoapp check:fix && yarn workspace @shared/ui check:fix"
     },
     "devDependencies": {
         "@types/react": "^18.2.65",
