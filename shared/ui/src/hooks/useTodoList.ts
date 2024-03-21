@@ -5,13 +5,19 @@ import { TTodo } from '../types/types'
 import { localStorageWrapper } from '../storage/storage'
 
 export const useTodoList = () => {
-    const { toDoList, setToDoList } = useContext(TodoContext)!
+    const {
+        toDoList,
+        setToDoList,
+        toDoListForSearching,
+        setToDoListForSearching,
+    } = useContext(TodoContext)!
 
     const sortByStage = (stage: string) => {
         const localTable = localStorageWrapper.getItem('toDos')
 
         if (stage === Stage.ALL) {
             setToDoList(localTable)
+            setToDoListForSearching(localTable)
             return
         }
 
@@ -20,16 +26,15 @@ export const useTodoList = () => {
         )
 
         setToDoList(filteredTable)
+        setToDoListForSearching(filteredTable)
     }
 
     const handleSearch = (value: string) => {
-        const localTable = localStorageWrapper.getItem('toDos')
         if (value === '') {
-            setToDoList(localTable)
+            setToDoList(toDoListForSearching)
             return
         }
-
-        const filteredTable = localTable.filter((todo: TTodo) =>
+        const filteredTable = toDoListForSearching.filter((todo: TTodo) =>
             todo.description.toLowerCase().includes(value.toLowerCase())
         )
 

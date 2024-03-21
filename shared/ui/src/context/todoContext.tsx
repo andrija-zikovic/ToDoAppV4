@@ -10,6 +10,8 @@ interface ContextValues {
     toDoList: TTodo[]
     setToDoList: React.Dispatch<React.SetStateAction<TTodo[]>>
     refetchToDoList: () => void
+    toDoListForSearching: TTodo[]
+    setToDoListForSearching: React.Dispatch<React.SetStateAction<TTodo[]>>
 }
 
 export const TodoContext = createContext<null | ContextValues>(null)
@@ -18,6 +20,8 @@ export const TodoContextProvider = ({ children }: IProps) => {
     const [toDoList, setToDoList] = useState(
         localStorageWrapper.getItem('toDos') as TTodo[]
     )
+    const [toDoListForSearching, setToDoListForSearching] =
+        useState<TTodo[]>(toDoList)
 
     const refetchToDoList = () => {
         const localTable = localStorageWrapper.getItem<TTodo[]>('toDos') || []
@@ -28,6 +32,8 @@ export const TodoContextProvider = ({ children }: IProps) => {
         toDoList,
         setToDoList,
         refetchToDoList,
+        toDoListForSearching,
+        setToDoListForSearching,
     }
 
     return (
