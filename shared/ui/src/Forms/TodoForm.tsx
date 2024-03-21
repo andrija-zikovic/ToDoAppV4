@@ -1,5 +1,5 @@
-import { IForm } from '@apps/todoapp'
-import { Form } from '@apps/todoapp'
+import { IForm } from '../../../../apps/Newtodo'
+import { Form } from '../../../../apps/Newtodo'
 import TextInput from '../Inputs/TextInput'
 import SubmitButton from '../Buttons/SubmitButton'
 import SelectInput from '../Inputs/SelectInput'

@@ -29,9 +29,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@apps/todoapp@workspace:*, @apps/todoapp@workspace:apps/todoapp":
+"@apps/todoapp@workspace:*, @apps/todoapp@workspace:apps/newToDo":
   version: 0.0.0-use.local
-  resolution: "@apps/todoapp@workspace:apps/todoapp"
+  resolution: "@apps/todoapp@workspace:apps/newToDo"
   dependencies:
     "@shared/ui": "workspace:*"
     "@types/react": "npm:^18.2.65"

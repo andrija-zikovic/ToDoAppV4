@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
-import { TodoContext } from '@apps/todoapp'
+import { TodoContext } from '../../../../apps/Newtodo'
 import ToDoCard from '../ToDoCard/ToDoCard'
 
 export const ToDoList = () => {

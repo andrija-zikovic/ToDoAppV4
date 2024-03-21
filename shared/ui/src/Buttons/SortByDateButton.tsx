@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { DateDown, DateUp } from '../Icons/index'
-import { SortStage } from '@apps/todoapp'
-import { useTodoList } from '@apps/todoapp'
+import { SortStage } from '../../../../apps/Newtodo'
+import { useTodoList } from '../../../../apps/Newtodo'
 
 type TSortStage = (typeof SortStage)[keyof typeof SortStage]
 
