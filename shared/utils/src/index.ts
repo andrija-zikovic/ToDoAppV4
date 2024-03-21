@@ -1,12 +1,7 @@
-export {
-    Stage,
-    SortStage,
-    StageColors,
-    TSortStage,
-    TStage,
-    TStageColors,
-} from './enums/stage'
+export { Stage, SortStage, StageColors } from './enums/stage'
 
-export { TTodo, TUpdateFormData, IForm } from './types/types'
+export type { TStage, TSortStage, TStageColors } from './enums/stage'
+
+export type { TTodo, TUpdateFormData, IForm } from './types/types'
 export { Form } from './enums/form'
 export { descriptionInputValidation } from './validation/descriptionInputValidation'

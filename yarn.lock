@@ -34,6 +34,7 @@ __metadata:
   resolution: "@apps/todoapp@workspace:apps/todoapp"
   dependencies:
     "@shared/context": "workspace:^"
+    "@shared/storage": "workspace:^"
     "@shared/ui": "workspace:^"
     "@shared/utils": "workspace:^"
     "@types/react": "npm:^18.2.65"
@@ -771,7 +772,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@shared/storage@workspace:shared/storage":
+"@shared/storage@workspace:^, @shared/storage@workspace:shared/storage":
   version: 0.0.0-use.local
   resolution: "@shared/storage@workspace:shared/storage"
   languageName: unknown
@@ -782,6 +783,7 @@ __metadata:
   resolution: "@shared/ui@workspace:shared/ui"
   dependencies:
     "@shared/context": "workspace:^"
+    "@shared/storage": "workspace:^"
     "@shared/utils": "workspace:^"
     "@types/react": "npm:^18.2.65"
     "@types/react-dom": "npm:^18.2.21"

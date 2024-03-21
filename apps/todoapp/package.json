@@ -13,9 +13,9 @@
     },
     "dependencies": {
         "@shared/context": "workspace:^",
+        "@shared/storage": "workspace:^",
         "@shared/ui": "workspace:^",
         "@shared/utils": "workspace:^",
-        "@shared/storage": "workspace:^",
         "dayjs": "^1.11.10",
         "localforage": "^1.10.0",
         "match-sorter": "^6.3.4",
