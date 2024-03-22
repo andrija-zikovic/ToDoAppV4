@@ -2,7 +2,7 @@ import SortByStageRadioInput from '../Inputs/SortByStageRadioInput'
 import { Stage } from '@shared/utils'
 import { useTodoList } from '../../hooks/useTodoList'
 
-export const SortByStageBox = () => {
+const SortByStageBox = () => {
     const sort = useTodoList()
 
     return (
@@ -30,3 +30,5 @@ export const SortByStageBox = () => {
         </fieldset>
     )
 }
+
+export default SortByStageBox

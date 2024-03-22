@@ -1,0 +1,11 @@
+{
+    "name": "@shared/create",
+    "type": "module",
+    "main": "./src",
+    "dependencies": {
+        "@shared/context": "workspace:^",
+        "@shared/ui": "workspace:^",
+        "@shared/utils": "workspace:^",
+        "dayjs": "^1.11.10"
+    }
+}

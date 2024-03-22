@@ -1,11 +1,9 @@
-import {
-    SortByStageBox,
-    SearchBox,
-    SortByDateButton,
-    ToDoList,
-} from '@shared/ui'
+import SortByDateButton from '../components/Buttons/SortByDateButton'
+import SearchBox from '../components/SearchBox/SearchBox'
+import SortByStageBox from '../components/SortByStageBox/SortByStageBox'
+import ToDoList from '../components/ToDoList/ToDoList'
 
-export default function ListScreen() {
+function ListScreen() {
     return (
         <div>
             <div className="flex flex-col justify-center items-center bg-orange-200 border-b-2 border-gray-700 text-gray-700 md:flex-row-reverse md:py-2 md:justify-between">
@@ -19,3 +17,5 @@ export default function ListScreen() {
         </div>
     )
 }
+
+export { ListScreen }

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { DateDown, DateUp } from '../Icons/index'
+import { DateDown, DateUp } from '@shared/ui'
 import { useTodoList } from '../../hooks/useTodoList'
 import { TSortStage } from '@shared/utils'
 

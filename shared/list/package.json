@@ -1,0 +1,10 @@
+{
+    "name": "@shared/list",
+    "type": "module",
+    "main": "./src",
+    "dependencies": {
+        "@shared/ui": "workspace:^",
+        "@shared/utils": "workspace:^",
+        "dayjs": "^1.11.10"
+    }
+}

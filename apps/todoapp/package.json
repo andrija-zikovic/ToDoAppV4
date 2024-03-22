@@ -13,6 +13,9 @@
     },
     "dependencies": {
         "@shared/context": "workspace:^",
+        "@shared/create": "workspace:^",
+        "@shared/edit": "workspace:^",
+        "@shared/list": "workspace:^",
         "@shared/storage": "workspace:^",
         "@shared/ui": "workspace:^",
         "@shared/utils": "workspace:^",

@@ -34,6 +34,9 @@ __metadata:
   resolution: "@apps/todoapp@workspace:apps/todoapp"
   dependencies:
     "@shared/context": "workspace:^"
+    "@shared/create": "workspace:^"
+    "@shared/edit": "workspace:^"
+    "@shared/list": "workspace:^"
     "@shared/storage": "workspace:^"
     "@shared/ui": "workspace:^"
     "@shared/utils": "workspace:^"
@@ -769,6 +772,37 @@ __metadata:
   resolution: "@shared/context@workspace:shared/context"
   dependencies:
     react: "npm:^18.2.0"
+  languageName: unknown
+  linkType: soft
+
+"@shared/create@workspace:^, @shared/create@workspace:shared/create":
+  version: 0.0.0-use.local
+  resolution: "@shared/create@workspace:shared/create"
+  dependencies:
+    "@shared/context": "workspace:^"
+    "@shared/ui": "workspace:^"
+    "@shared/utils": "workspace:^"
+    dayjs: "npm:^1.11.10"
+  languageName: unknown
+  linkType: soft
+
+"@shared/edit@workspace:^, @shared/edit@workspace:shared/edit":
+  version: 0.0.0-use.local
+  resolution: "@shared/edit@workspace:shared/edit"
+  dependencies:
+    "@shared/context": "workspace:^"
+    "@shared/ui": "workspace:^"
+    "@shared/utils": "workspace:^"
+  languageName: unknown
+  linkType: soft
+
+"@shared/list@workspace:^, @shared/list@workspace:shared/list":
+  version: 0.0.0-use.local
+  resolution: "@shared/list@workspace:shared/list"
+  dependencies:
+    "@shared/ui": "workspace:^"
+    "@shared/utils": "workspace:^"
+    dayjs: "npm:^1.11.10"
   languageName: unknown
   linkType: soft
 

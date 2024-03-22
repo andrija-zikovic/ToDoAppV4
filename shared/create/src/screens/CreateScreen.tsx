@@ -51,4 +51,4 @@ const CreateScreen = () => {
     )
 }
 
-export default CreateScreen
+export { CreateScreen }

@@ -1,4 +1,4 @@
 {
-    "include": ["src"],
+    "include": ["src", "../list/src/components/Buttons/SortByDateButton.tsx"],
     "extends": "../../tsconfig.json"
 }

@@ -1,16 +1,15 @@
 import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router'
 import { useSearchParams } from 'react-router-dom'
-import { descriptionInputValidation } from '@shared/utils/src/validation/descriptionInputValidation'
+import { descriptionInputValidation, IForm, Form } from '@shared/utils'
 import { TodoForm } from '@shared/ui'
-import { IForm, Form } from '@shared/utils'
-import { useTodo } from '../hooks/useTodo'
+import { useEdit } from '../hooks/useEdit'
 
 const EditScreen = () => {
     const navigate = useNavigate()
     const [errorMessage, setErrorMessage] = useState('')
     const [isSubmitting, setIsSubmitting] = useState(false)
-    const { deleteTodo, updateTodo } = useTodo()
+    const { deleteTodo, updateTodo } = useEdit()
 
     const [searchParams] = useSearchParams()
 
@@ -72,4 +71,4 @@ const EditScreen = () => {
     )
 }
 
-export default EditScreen
+export { EditScreen }
