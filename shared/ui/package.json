@@ -2,10 +2,6 @@
     "name": "@shared/ui",
     "type": "module",
     "main": "./src",
-    "scripts": {
-        "check": "eslint . --ext .ts | npx prettier . --check",
-        "check:fix": "eslint . --ext .ts --fix | npx prettier . --write"
-    },
     "dependencies": {
         "@shared/context": "workspace:^",
         "@shared/storage": "workspace:^",
