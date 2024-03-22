@@ -5,7 +5,7 @@ const meta = {
     title: 'DropDownMenu',
     component: DropDownMenu,
     parameters: {
-        layout: 'centered',
+        layout: 'padded',
     },
     tags: ['autodocs'],
 } satisfies Meta<typeof DropDownMenu>

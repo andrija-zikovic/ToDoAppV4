@@ -15,4 +15,4 @@ const SubmitButton = ({ isSubmitting }: IProps) => {
     )
 }
 
-export default SubmitButton
+export { SubmitButton }
