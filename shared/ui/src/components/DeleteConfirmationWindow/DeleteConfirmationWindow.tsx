@@ -32,4 +32,4 @@ const DeleteConfirmationWindow = (props: IProps) => {
     )
 }
 
-export default DeleteConfirmationWindow
+export { DeleteConfirmationWindow }

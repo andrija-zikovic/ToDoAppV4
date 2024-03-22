@@ -28,4 +28,4 @@ const SelectInput = ({ label, value, name }: IProps) => {
     )
 }
 
-export default SelectInput
+export { SelectInput }

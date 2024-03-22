@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { MessageContext } from '@shared/context'
-import InfoMessage from './InfoMessage'
+import { InfoMessage } from './InfoMessage'
 
 export const InfoMessagesBox = () => {
     const { infoMessages } = useContext(MessageContext)!

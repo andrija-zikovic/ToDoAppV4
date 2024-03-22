@@ -21,4 +21,4 @@ const MenuButton = ({ setDropDownVisibility, dropDownVisibility }: IProps) => {
     )
 }
 
-export default MenuButton
+export { MenuButton }

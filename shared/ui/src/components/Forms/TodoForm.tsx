@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { TTodo } from '@shared/utils'
-import TextInput from '../Inputs/TextInput'
+import { TextInput } from '../Inputs/TextInput'
 import SubmitButton from '../Buttons/SubmitButton'
-import SelectInput from '../Inputs/SelectInput'
-import DeleteConfirmationWindow from '../DeleteConfirmationWindow/DeleteConfirmationWindow'
+import { SelectInput } from '../Inputs/SelectInput'
+import { DeleteConfirmationWindow } from '../DeleteConfirmationWindow/DeleteConfirmationWindow'
 import Overlay from '../Overlay/Overlay'
 
 type IForm = {

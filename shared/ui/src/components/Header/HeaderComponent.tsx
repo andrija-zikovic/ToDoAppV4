@@ -1,5 +1,5 @@
-import DropDownMenu from './DropDownMenu'
-import MenuButton from '../Buttons/MenuButton'
+import { DropDownMenu } from './DropDownMenu'
+import { MenuButton } from '../Buttons/MenuButton'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 

@@ -3,7 +3,7 @@ type IProps = {
     type: 'error' | 'success'
 }
 
-export const InfoMessage = ({ message, type }: IProps) => {
+const InfoMessage = ({ message, type }: IProps) => {
     const status = {
         error: 'bg-red-200 border-red-600',
         success: 'bg-green-200',
@@ -22,4 +22,4 @@ export const InfoMessage = ({ message, type }: IProps) => {
     )
 }
 
-export default InfoMessage
+export { InfoMessage }

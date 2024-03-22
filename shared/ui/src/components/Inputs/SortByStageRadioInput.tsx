@@ -4,11 +4,7 @@ type IProps = {
     sortStageBy: (stage: string) => void
 }
 
-export const SortByStageRadioInput = ({
-    title,
-    stage,
-    sortStageBy,
-}: IProps) => {
+const SortByStageRadioInput = ({ title, stage, sortStageBy }: IProps) => {
     return (
         <div className="flex flex-row justify-start items-center whitespace-nowrap gap-2 px-6 py-1 h-auto md:px-2">
             <label
@@ -32,4 +28,4 @@ export const SortByStageRadioInput = ({
     )
 }
 
-export default SortByStageRadioInput
+export { SortByStageRadioInput }
