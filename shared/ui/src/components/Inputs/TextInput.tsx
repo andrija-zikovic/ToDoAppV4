@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 type IProps = {
     label: string
     placeholder: string
@@ -20,6 +22,8 @@ const TextInput = ({
             ? 'bg-red-300 border-red-600'
             : 'bg-orange-200 border-gray-700'
 
+    const [inputValue, setInputValue] = useState(value)
+
     return (
         <label className="flex flex-col justify-center items-center gap-2">
             {label}
@@ -27,7 +31,8 @@ const TextInput = ({
                 type="text"
                 name={name}
                 placeholder={placeholder}
-                value={value}
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
                 onFocus={(e) => {
                     setTimeout(
                         () =>

@@ -1,4 +1,8 @@
 {
-    "include": ["src", "../list/src/components/Buttons/SortByDateButton.tsx"],
+    "include": [
+        "src",
+        "../list/src/components/Buttons/SortByDateButton.tsx",
+        "../list/src/components/Inputs/SortByStageRadioInput.tsx"
+    ],
     "extends": "../../tsconfig.json"
 }

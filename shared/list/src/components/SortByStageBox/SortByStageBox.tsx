@@ -1,4 +1,4 @@
-import SortByStageRadioInput from '../Inputs/SortByStageRadioInput'
+import { SortByStageRadioInput } from '@shared/ui'
 import { Stage } from '@shared/utils'
 import { useTodoList } from '../../hooks/useTodoList'
 

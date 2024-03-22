@@ -36,6 +36,8 @@ const EditScreen = () => {
             return
         }
 
+        errorMessage && setErrorMessage('')
+
         updateTodo({
             id: initData!.id,
             description: description,
