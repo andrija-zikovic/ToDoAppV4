@@ -1,4 +1,4 @@
 {
-    "include": ["src", "../../shared/utils/src/validation"],
+    "include": ["src"],
     "extends": "../../tsconfig.json"
 }
