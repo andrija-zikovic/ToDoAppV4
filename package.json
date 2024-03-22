@@ -14,8 +14,8 @@
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
         "check": "eslint . --ext .ts | npx prettier . --check",
         "check:fix": "eslint . --ext .ts --fix | npx prettier . --write",
-        "storybook": "workspace @dev-tools/storybook start",
-        "build-storybook": "storybook build"
+        "storybook": "yarn workspace @dev-tools/storybook start",
+        "build-storybook": "yarn workspace @dev-tools/storybook build"
     },
     "devDependencies": {
         "@types/react": "^18.2.65",
