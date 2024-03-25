@@ -14,13 +14,11 @@ export const SortByDateButton = () => {
 
     const handleClick = () => {
         handleSort(sort)
-        setSort((prev) =>
-            prev === SortStage.OLDEST ? SortStage.NEWEST : SortStage.OLDEST
-        )
+        setSort(sort === SortStage.OLDEST ? SortStage.NEWEST : SortStage.OLDEST)
     }
     return (
         <button
-            id="sortDateMobile"
+            id="sortByDate"
             className="h-9 w-10 bg-gray-700 p-0 flex justify-center items-center rounded-md cursor-pointer transition-all duration-300 ease-in-out fill-orange-200 hover:fill-slate-950 focus:fill-slate-950 active:fill-slate-950 md:static"
             onClick={handleClick}
         >

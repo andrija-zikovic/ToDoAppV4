@@ -18,8 +18,9 @@ export const TodoContext = createContext<null | ContextValues>(null)
 
 export const TodoContextProvider = ({ children }: IProps) => {
     const [toDoList, setToDoList] = useState(
-        localStorageWrapper.getItem('toDos') as TTodo[]
+        (localStorageWrapper.getItem('toDos') as TTodo[]) || []
     )
+
     const [toDoListForSearching, setToDoListForSearching] =
         useState<TTodo[]>(toDoList)
 

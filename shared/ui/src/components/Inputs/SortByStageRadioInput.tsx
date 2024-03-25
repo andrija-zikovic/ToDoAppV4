@@ -13,7 +13,7 @@ const SortByStageRadioInput = ({ title, stage, sortStageBy }: IProps) => {
             >
                 <input
                     type="radio"
-                    id={title}
+                    id={title.replace(/\s/g, '')}
                     name="sortByStage"
                     value={stage}
                     className="w-6 h-6"
