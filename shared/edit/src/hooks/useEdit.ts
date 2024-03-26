@@ -1,26 +1,37 @@
 import { useContext } from 'react'
 import { useNavigate } from 'react-router'
-import { localStorageWrapper } from '@shared/storage'
 import { TTodo, TUpdateFormData } from '@shared/utils'
 import { MessageContext, TodoContext } from '@shared/context'
+import axios from 'axios'
+
+const putTodo = async (id: string, item: TTodo) => {
+    await axios.put(`http://localhost:3000/todos/${id}`, item)
+}
+
+const getTodo = async (id: string) => {
+    const item: TTodo = await axios
+        .get(`http://localhost:3000/todos/${id}`)
+        .then((res) => res.data)
+    return item
+}
+
+const delTodo = async (id: string) => {
+    await axios.delete(`http://localhost:3000/todos/${id}`)
+}
 
 export const useEdit = () => {
     const { setInfoMessages } = useContext(MessageContext)!
     const { refetchToDoList } = useContext(TodoContext)!
     const navigate = useNavigate()
 
-    const updateTodo = ({ id, description, stage }: TUpdateFormData) => {
-        const storage = localStorageWrapper.getItem('toDos') || []
-
-        const item = storage.find(
-            (item: TTodo) => item.id.toString() === id
-        ) satisfies TTodo
+    const updateTodo = async ({ id, description, stage }: TUpdateFormData) => {
+        const item: TTodo = await getTodo(id)
 
         try {
             description ? (item.description = description) : null
             stage ? (item.stage = stage) : null
 
-            localStorageWrapper.setItem('toDos', storage)
+            await putTodo(id, item)
 
             setInfoMessages({ message: 'Todo updated', type: 'success' })
             refetchToDoList()
@@ -31,12 +42,8 @@ export const useEdit = () => {
         }
     }
 
-    const deleteTodo = (id: string) => {
-        const storage = localStorageWrapper.getItem('toDos') || []
-
-        const item = storage.find(
-            (item: TTodo) => item.id.toString() === id
-        ) satisfies TTodo
+    const deleteTodo = async (id: string) => {
+        const item: TTodo = await getTodo(id)
 
         if (!item) {
             setInfoMessages({ message: 'Todo not found', type: 'error' })
@@ -50,11 +57,7 @@ export const useEdit = () => {
         }
 
         try {
-            const newStorage = storage.filter(
-                (item: TTodo) => item.id.toString() !== id
-            )
-
-            localStorageWrapper.setItem('toDos', newStorage)
+            await delTodo(id)
 
             refetchToDoList()
             navigate('/')

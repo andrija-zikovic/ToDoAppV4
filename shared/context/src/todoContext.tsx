@@ -1,6 +1,6 @@
-import { createContext, useState } from 'react'
+import { createContext, useEffect, useState } from 'react'
 import { TTodo } from '@shared/utils'
-import { localStorageWrapper } from '@shared/storage'
+import axios from 'axios'
 
 type IProps = {
     children: React.ReactNode
@@ -14,19 +14,41 @@ interface ContextValues {
     setToDoListForSearching: React.Dispatch<React.SetStateAction<TTodo[]>>
 }
 
+export const getToDos = async () => {
+    const localTable: TTodo[] = await axios
+        .get('http://localhost:3000/todos')
+        .then((res) => res.data)
+    return localTable
+}
+
 export const TodoContext = createContext<null | ContextValues>(null)
 
 export const TodoContextProvider = ({ children }: IProps) => {
-    const [toDoList, setToDoList] = useState(
-        (localStorageWrapper.getItem('toDos') as TTodo[]) || []
+    const [toDoListForSearching, setToDoListForSearching] = useState<TTodo[]>(
+        []
     )
+    const [toDoList, setToDoList] = useState<TTodo[]>([])
 
-    const [toDoListForSearching, setToDoListForSearching] =
-        useState<TTodo[]>(toDoList)
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const items = await getToDos()
+                setToDoList(items)
+                setToDoListForSearching(items)
+            } catch (error) {
+                console.error(error)
+            }
+        }
+        fetchData()
+    }, [])
 
-    const refetchToDoList = () => {
-        const localTable = localStorageWrapper.getItem<TTodo[]>('toDos') || []
-        setToDoList(localTable)
+    const refetchToDoList = async () => {
+        try {
+            const items = await getToDos()
+            setToDoList(items)
+        } catch (error) {
+            console.error(error)
+        }
     }
 
     const contextValues = {

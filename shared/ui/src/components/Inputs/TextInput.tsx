@@ -22,7 +22,7 @@ const TextInput = ({
             ? 'bg-red-300 border-red-600'
             : 'bg-orange-200 border-gray-700'
 
-    const [inputValue, setInputValue] = useState(value)
+    const [inputValue, setInputValue] = useState(value || '')
 
     return (
         <label className="flex flex-col justify-center items-center gap-2">

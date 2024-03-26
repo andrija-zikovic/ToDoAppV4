@@ -1,31 +1,31 @@
 import { useContext } from 'react'
 import { useNavigate } from 'react-router'
-import { localStorageWrapper } from '@shared/storage'
-import { Stage } from '@shared/utils'
+import { Stage, TTodo } from '@shared/utils'
 import { MessageContext, TodoContext } from '@shared/context'
 import dayjs from 'dayjs'
+import axios from 'axios'
+
+const postTodo = async (todo: TTodo) => {
+    await axios.post('http://localhost:3000/todos', todo)
+}
 
 export const useTodo = () => {
     const { setInfoMessages } = useContext(MessageContext)!
     const { refetchToDoList } = useContext(TodoContext)!
     const navigate = useNavigate()
 
-    const createTodo = (description: string) => {
+    const createTodo = async (description: string) => {
         try {
-            const storedTodos = localStorageWrapper.getItem('toDos') || []
-
             const now = dayjs().valueOf()
 
             const newTodo = {
-                id: now,
+                id: now.toString(),
                 description: description,
                 created_at: now,
                 stage: Stage.PENDING,
             }
 
-            const updatedTodos = [newTodo, ...storedTodos]
-
-            localStorageWrapper.setItem('toDos', updatedTodos)
+            await postTodo(newTodo)
 
             refetchToDoList()
             navigate('/')

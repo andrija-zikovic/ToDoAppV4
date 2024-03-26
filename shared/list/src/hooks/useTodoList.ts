@@ -1,7 +1,6 @@
 import { useContext } from 'react'
-import { TodoContext } from '@shared/context'
+import { TodoContext, getToDos } from '@shared/context'
 import { Stage, TSortStage, TTodo } from '@shared/utils'
-import { localStorageWrapper } from '@shared/storage'
 
 export const useTodoList = () => {
     const {
@@ -11,8 +10,8 @@ export const useTodoList = () => {
         setToDoListForSearching,
     } = useContext(TodoContext)!
 
-    const sortByStage = (stage: string) => {
-        const localTable = localStorageWrapper.getItem('toDos')
+    const sortByStage = async (stage: string) => {
+        const localTable = await getToDos()
 
         if (stage === Stage.ALL) {
             setToDoList(localTable)
