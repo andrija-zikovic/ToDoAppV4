@@ -8,4 +8,6 @@ run yarn ----> yarn
 
 run live server ----> yarn start
 
+run server ----> npx json-server db/db.json
+
 got to provided link
