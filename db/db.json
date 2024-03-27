@@ -1,3 +1,10 @@
 {
-    "todos": []
+  "todos": [
+    {
+      "id": "1710353138",
+      "description": "Second todo",
+      "created_at": 1710353138,
+      "stage": "done"
+    }
+  ]
 }
