@@ -15,7 +15,8 @@
         "check": "eslint . --ext .ts | npx prettier . --check",
         "check:fix": "eslint . --ext .ts --fix | npx prettier . --write",
         "storybook": "yarn workspace @dev-tools/storybook start",
-        "build-storybook": "yarn workspace @dev-tools/storybook build"
+        "build-storybook": "yarn workspace @dev-tools/storybook build",
+        "start:server": "npx json-server db/db.json"
     },
     "devDependencies": {
         "@types/react": "^18.2.65",
