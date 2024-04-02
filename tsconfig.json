@@ -16,5 +16,6 @@
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
         "allowSyntheticDefaultImports": true
-    }
+    },
+    "exclude": ["cypress.config.ts", "cypress", "node_modules"]
 }

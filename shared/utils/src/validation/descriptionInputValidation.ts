@@ -5,4 +5,5 @@ export const descriptionInputValidation = (input: string) => {
     if (input.length > 256) {
         return 'Description is too long'
     }
+    return ''
 }
